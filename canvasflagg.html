@@ -5,31 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elfenbenkysten Flagg</title>
+    <h1 style="color:white;">Elfenbenkysten flagg med "canvas", riktig fargekode og dimensjoner</h1>
 </head>
 
-<body>
+
+<body style="background-color:black;">
   
-<canvas id="flag-elfenbenkysten" width="300px" height="75px"></canvas>
+<canvas id="flag-elfenbenkysten" width="900px" height="533px" ></canvas>
 
 <script>
+const canvas = document.getElementById("flag-elfenbenkysten");
+const ctx = canvas.getContext("2d");
 
-var getId1 = document.getElementById('flag-elfenbenkysten');
-var getIdContext1 = getId1.getIdContext('2d');
-getIdContext1.fillStyle = 'orange';
-getIdContext1.fillRect(0,0,150,250);
-getIdContext1.fillStyle = 'white';
-getIdContext1.fillRect(0,25,160,25);
-getIdContext1.fillStyle ='green';
-getIdContext1.fillRect(0,50,150,25);
+
+
+ctx.fillStyle = "#f77f00";
+ctx.fillRect(0, 10, 266, 533); 
+ctx.fillStyle ="#fff";
+ctx.fillRect(266,10,266,533);
+ctx.fillStyle = "#009e60"
+ctx.fillRect(532,10,266,533);
 
 </script>
 
-
 </body>
 </html>
-
-<!--
-    orange #009e60
-    hvit #fff
-    grønn #f77f00
--->
